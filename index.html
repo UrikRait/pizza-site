@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title></title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<nav class="header__nav">
+						<a class="header__logo logo" href="#">
+							<img class="logo__img icon" src="img/logo.svg" alt="logo">
+							<h3 class="logo__text">PIZZA</h3>
+						</a>
+						<div class="header__contacts contacts">
+							<img class="contacts__img icon" src="img/busket.svg" alt="busket">
+							<img class="contacts__img icon" src="img/phone.svg" alt="phone">
+							<a class="contacts__call" href="tel:+79674913808">+7(967) 491 38-08</a>
+						</div>
+					</nav>
+					<div class="header__info">
+						<h1 class="header__title">PI<span class="header__title-color">ZZ</span>A</h1>
+						<p class="header__text">Большой выбор пицц на любой вкус. <br>Заказывайте скорее!</p>
+					</div>
+					<div class="header__benefits">
+						<div class="header__item">
+							<img class="benefits__icon icon" src="img/clock.png" alt="clock">
+							<p class="header__item-text">Круглосуточная<br> работа</p>
+						</div>
+						<div class="header__item">
+							<img class="benefits__icon icon" src="img/fast-deliviry.png" alt="delivery">
+							<p class="header__item-text">Быстрая<br> доставка</p>
+						</div>
+						<div class="header__item">
+							<img class="benefits__icon icon" src="img/Cheif.png" alt="cheif">
+							<p class="header__item-text">Опытные<br> повара</p>
+						</div>
+					</div>
+					<img class="header__pizza" src="img/pizza.png" alt="pizza-bg" draggable="false">
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<p class="menu__title title">Меню</p>
+				<div class="menu">
+					<div class="menu__item">
+						<img class="menu__img" src="img/pepperoni.png" alt="">
+						<h3 class="menu__name">Пепперони</h3>
+						<p class="menu__description">35см / 680г</p>
+						<button class="menu__button" href="#">Добавить</button>
+					</div>
+					<div class="menu__item">
+						<img class="menu__img" src="img/Vetcnina_sir.png" alt="">
+						<h3 class="menu__name">Ветчина и сыр</h3>
+						<p class="menu__description">35см / 750г</p>
+						<button class="menu__button" href="#">Добавить</button>
+					</div>
+					<div class="menu__item">
+						<img class="menu__img" src="img/Vetcnina_grib.png" alt="">
+						<h3 class="menu__name">Ветчина и грибы</h3>
+						<p class="menu__description">35см / 780г</p>
+						<button class="menu__button" href="#">Добавить</button>
+					</div>
+					<div class="menu__item">
+						<img class="menu__img" src="img/Vetcnina_grib.png" alt="">
+						<h3 class="menu__name">Жульен</h3>
+						<p class="menu__description">35см / 780г</p>
+						<button class="menu__button" href="#">Добавить</button>
+					</div>
+					<div class="menu__item">
+						<img class="menu__img" src="img/Vetcnina_grib.png" alt="">
+						<h3 class="menu__name">Вегатарианская</h3>
+						<p class="menu__description">35см / 780г</p>
+						<button class="menu__button" href="#">Добавить</button>
+					</div>
+					<div class="menu__item">
+						<img class="menu__img" src="img/Vetcnina_grib.png" alt="">
+						<h3 class="menu__name">Техасская</h3>
+						<p class="menu__description">35см / 780г</p>
+						<button class="menu__button" href="#">Добавить</button>
+					</div>
+				</div>
+			</div>
+			<section class="feedback">
+				<div class="container">
+					<div class="feedback__title title">Контакты</div>
+					<div class="feedback__contacts">
+						<div class="feedback__item">
+							<p class="feedback__info">Номер телефона:</p>
+							<div class="feedback__flex">
+								<img class="feedback__icon" src="img/phone2.png" alt="phone">
+								<a class="feedback__text" href="tel:+79674913808">+7(967)491-38-08</a>
+							</div>
+						</div>
+						<div class="feedback__item">
+							<p class="feedback__info">Наша почта:</p>
+							<div class="feedback__flex">
+								<img class="feedback__icon" src="img/mail.png" alt="phone">
+								<p class="feedback__text">pizza@gmail.com</p>
+							</div>
+						</div>
+						<div class="feedback__item">
+							<p class="feedback__info">Мы находимся тут:</p>
+							<div class="feedback__flex">
+								<img class="feedback__icon" src="img/location.png" alt="phone">
+								<div class="feedback__infobox">
+									<p class="feedback__text feedback__subtext">Район номер 1, улица номер 1, <br>дом номер 1</p>
+									<p class="feedback__text feedback__subtext">Район номер 2, улица номер 2, <br>дом номер 2</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img class="feedback__bg" src="img/contacts__bg.png" alt="">
+				</div>
+			</section>
+			<section class="newsletter">
+				<div class="container">
+					<div class="newsletter__inner">
+						<form class="newsletter__form" action="#">
+							<input class="newsletter__mail newsletter__input input" type="email" name="login" placeholder="Ваша почта" autocomplete="off">
+							<input class="newsletter__subscribe newsletter__input input" type="submit" name="send" value="Подписаться">
+						</form>
+					</div>
+					<p class="newsletter__text">Подпишитесь на нашу рассылку, чтобы первыми получать новости о новых акциях и промокодах</p>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+		</footer>
+	</div>
+</body>
+</html>
