@@ -1,0 +1,167 @@
+.admin__wrapper{
+    display: flex;
+    background: var(--second);
+    color: #000;
+}
+.panel{
+    width: 300px;
+    height: 100vh;
+    background: var(--accent);
+    border-right: 2px solid var(--font2);
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        font-size: 20px;
+        margin: 10px 10px 0 10px;
+        padding: 5px;
+        border: 2px solid var(--font2);
+        background: var(--second);
+        border-radius: 20px;
+        text-align: center;
+    }
+    &__link:hover{
+        transition: all .1s ease-in-out;
+        background: #cab35e;
+    }
+}
+.orders{
+    margin: 0 auto;
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 386px);
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+}
+.order{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--font2);
+    border-radius: 73px 10px;
+    margin-top: 50px;
+    &__png{
+        width: 200px;
+        height: 150px;
+    }
+    &__pizza-name{
+        margin: 10px;
+    }
+    &__text{
+        margin: 20px;
+    }
+    &__paragraph + &__paragraph{
+        margin-top: 10px;
+    }
+    &__button{
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid var(--font2);
+        background: var(--second);
+        border-radius: 20px;
+    }
+    &__button:hover{
+        transition: all .1s ease-in-out;
+        background: #cab35e;
+    }
+}
+.products{
+    margin: 0 auto;
+    &__item{
+        width: 304px;
+        height: 400px;
+        margin-top: 50px;
+        border-radius: 100px 10px;
+        background-color: var(--accent);
+		box-shadow: 5px 5px 5px rgba(175, 100, 47, 0.8);
+    }
+    &__addBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e0e0e0;
+        box-shadow: 5px 5px 5px rgba(199, 182, 170, 0.8);
+    }
+    &__addBtn:hover{
+        background: #d1d1d1;
+        cursor: pointer;
+    }
+    &__plus{
+        margin-top: 250px;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 386px);
+    }
+    &__button{
+		text-align: center;
+		padding: 16px;
+		border: 3px solid #FFFFFF;
+		border-radius: 20px;
+		display: block;
+		margin: 0 auto;
+		font-size: 20px;
+		background: none;
+		font-weight: 800;
+		color: var(--font);
+	}
+    &__img{
+        width: 304px;
+        height: 186px;
+        border-radius: 100px 10px 0 0;
+    }
+}
+.input{
+    z-index: 100;
+    background: rgba(209, 209, 209, 0.5);
+    &__download{
+        display: none;
+    }  
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 100px;
+        border: 2px dashed var(--font2);
+    }
+    &__button:hover{
+        cursor: pointer;
+    }
+    &__button.active{
+        border: 2px dotted var(--font2);
+        background: #dbc678;
+    }
+    &__box{
+        background: #dbc678;
+        width: 300px;
+        height: 40px;
+    }
+    &__box + &__box{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    &__content{
+        padding: 10px;
+    }
+}
+
+.popup__bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(39, 39, 39, 0.5);
+}
+.submit{
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
